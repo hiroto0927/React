@@ -1,9 +1,35 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Topic, { PropstTopic } from '../components/topic'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+
+  const topic1: PropstTopic = {
+    href: 'https://nextjs.org/docs',
+    title: <>Documentation &rarr;</>,
+    content: 'Find in-depth information about Next.js features and API.'
+  }
+
+  const topic2: PropstTopic = {
+    href: 'https://nextjs.org/learn',
+    title: <>Learn &rarr;</>,
+    content:'Learn about Next.js in an interactive course with quizzes!' 
+  }
+
+  const topic3: PropstTopic = {
+    href: 'https://github.com/vercel/next.js/tree/canary/examples',
+    title: <>Examples &rarr;</>,
+    content: 'Discover and deploy boilerplate example Next.js projects.'
+  }
+
+  const topic4: PropstTopic = {
+    href: 'https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app',
+    title: <>Deploy &rarr;</>,
+    content: 'Instantly deploy your Next.js site to a public URL with Vercel.'
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -23,33 +49,15 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          
+          <Topic {...topic1} />
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Topic {...topic2} />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Topic {...topic3} />
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Topic {...topic4} />
+          
         </div>
       </main>
 

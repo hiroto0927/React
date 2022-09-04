@@ -33,6 +33,7 @@ export default function Content() {
                 </p>
                 <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
+                  {/* 矢印のimage */}
                   <svg
                     fill="none"
                     stroke="currentColor"

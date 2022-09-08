@@ -5,8 +5,8 @@
 
 export default function Header() {
   return (
-    <header className="">
-      <div className="navbar bg-base-100  ">
+    <header className="fixed  z-50 w-screen">
+      <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -41,23 +41,9 @@ export default function Header() {
             </ul>
           </div>
         </div>
-
-        <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            className="w-20 h-20 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span className="ml-3 text-5xl">Tailblocks</span>
-        </a>
-
+        <div className="navbar-center">
+          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
             <svg

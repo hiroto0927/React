@@ -5,14 +5,18 @@
 
 export default function Header() {
   return (
-    <header className="fixed  z-50 w-screen">
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
+    <header className="fixed z-50 w-screen bg-white">
+      <div className=" text-center my-7">
+        <a className=" btn btn-ghost text-5xl ">daisyUI</a>
+      </div>
+
+      <div className="flex top-0 navbar">
+        <div className="p-10 navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost btn-circle">
+            <label tabIndex={0} className="btn btn-ghost btn-circle w-14 h-14">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -41,14 +45,12 @@ export default function Header() {
             </ul>
           </div>
         </div>
-        <div className="navbar-center">
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
-        </div>
-        <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle">
+
+        <div className=" m-10 navbar-end">
+          <button className="btn btn-ghost btn-circle w-14 h-14 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-10 w-10"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -61,11 +63,11 @@ export default function Header() {
               />
             </svg>
           </button>
-          <button className="btn btn-ghost btn-circle">
+          <button className=" btn btn-ghost btn-circle w-14 h-14">
             <div className="indicator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

@@ -1,18 +1,17 @@
-// export type PropsHead = {
-//   color: string;
-//   color2: string;
-// };
-
 export default function Header() {
   return (
-    <header className="">
-      <div className="navbar bg-base-100  ">
-        <div className="navbar-start">
+    <header className="fixed z-50 w-screen bg-white">
+      <div className=" text-center my-7">
+        <a className=" btn btn-ghost text-5xl ">daisyUI</a>
+      </div>
+
+      <div className="flex top-0 h-13  ">
+        <div className="p-10 navbar-start m-0">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost btn-circle">
+            <label tabIndex={0} className="btn btn-ghost btn-circle w-14 h-14">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -42,44 +41,12 @@ export default function Header() {
           </div>
         </div>
 
-        <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            className="w-20 h-20 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span className="ml-3 text-5xl">Tailblocks</span>
-        </a>
-
-        <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-          <button className="btn btn-ghost btn-circle">
-            <div className="indicator">
+        <div className=" m-10 navbar-end">
+          <div className="text-right">
+            <button className="btn btn-ghost btn-circle w-14 h-14 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-10 w-10"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -88,12 +55,30 @@ export default function Header() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
-              <span className="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
+            </button>
+            <button className=" btn btn-ghost btn-circle w-14 h-14">
+              <div className="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-10 w-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  />
+                </svg>
+                <span className="badge badge-xs badge-primary indicator-item"></span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </header>

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "react-simple-chatbot": ["types/react-simple-chatbot"]
+    }
+  }
+}

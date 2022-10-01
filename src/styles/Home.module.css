@@ -1,0 +1,6 @@
+.higuchi {
+  background: rgba(13, 212, 92, 0.712);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
